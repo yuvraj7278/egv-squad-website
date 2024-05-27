@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGV Squad</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
+        /* Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
             background-color: #0f1923;
             color: #ffffff;
+            line-height: 1.6;
         }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Header Styles */
         header {
             background-color: #1c1f26;
             padding: 20px;
@@ -24,17 +40,14 @@
             margin: 0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
+        /* Navigation Styles */
         nav {
-            display: flex;
-            justify-content: center;
             background-color: #1c1f26;
-            padding: 10px;
             border-bottom: 2px solid #ff4655;
+            text-align: center;
         }
         nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 20px;
+            padding: 15px 20px;
             margin: 0 10px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -42,17 +55,24 @@
             background-color: #ff4655;
             color: #000000;
         }
+        /* Container Styles */
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
             background-color: #1c1f26;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
             border: 2px solid #ff4655;
         }
+        /* Section Styles */
         .section {
             margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1c1f26;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 2px solid #ff4655;
         }
         .section h2 {
             color: #ffd700;
@@ -66,20 +86,18 @@
             margin: 10px 0;
             text-align: center;
         }
+        /* Links Styles */
         .links {
             display: flex;
             justify-content: center;
             margin-top: 20px;
         }
         .links a {
-            text-decoration: none;
-            color: #ffffff;
             padding: 10px 20px;
-            background-color: #ff4655;
+            margin: 0 10px;
             border-radius: 5px;
             border: 2px solid #ff4655;
             transition: all 0.3s ease;
-            margin: 0 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         .links a:hover {
@@ -87,6 +105,7 @@
             border: 2px solid #ffa500;
             color: #000000;
         }
+        /* Footer Styles */
         footer {
             background-color: #1c1f26;
             padding: 20px;
@@ -99,11 +118,11 @@
         }
         footer a {
             color: #ff4655;
-            text-decoration: none;
         }
         footer a:hover {
             text-decoration: underline;
         }
+        /* Contact Info Styles */
         .contact-info {
             display: flex;
             justify-content: center;
@@ -112,6 +131,7 @@
         .contact-info p {
             margin: 5px 15px;
         }
+        /* Social Icons Styles */
         .social-icons {
             display: flex;
             justify-content: center;
@@ -126,9 +146,28 @@
         .social-icons a:hover {
             color: #ffa500;
         }
+        /* News Section Styles */
+        .news {
+            background-color: #1c1f26;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 2px solid #ff4655;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .news h2 {
+            color: #ffd700;
+            border-bottom: 2px solid #ff4655;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .news p {
+            color: #dcdcdc;
+            margin: 10px 0;
+            text-align: center;
+        }
     </style>
-    <!-- Font Awesome for social media icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -137,6 +176,7 @@
     <nav>
         <a href="#team">Team Lineup</a>
         <a href="#youtube">YouTube</a>
+        <a href="#discord">Discord</a>
         <a href="#instagram">Instagram</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -147,38 +187,48 @@
             <p>EGV-AMAN</p>
             <p>EGV-Craniax8096</p>
         </div>
+        <div class="news" id="news1">
+            <h2>News</h2>
+            <p>Stay tuned for exciting updates!</p>
+        </div>
         <div class="section" id="youtube">
             <h2>YouTube</h2>
             <p>Check out our YouTube channel:</p>
             <div class="links">
-                <a href="https://www.youtube.com/@percyjackson-oy2gf?si=O2L0OA2le1zx6iOJ">EGV Squad YouTube</a>
+                <a href="https://www.youtube.com/@percyjackson-oy2gf?si=O2L0OA2le1zx6i
+OJ" target="_blank">EGV Squad YouTube</a>
+            </div>
+        </div>
+        <div class="section" id="discord">
+            <h2>Discord</h2>
+            <p>Join our Discord community:</p>
+            <div class="links">
+                <a href="https://discord.gg/egvsquad" target="_blank">EGV Squad Discord</a>
             </div>
         </div>
         <div class="section" id="instagram">
             <h2>Instagram</h2>
-            <p>Follow us on Instagram:</p>
+            <p>Check out our Instagram page:</p>
             <div class="links">
-                <a href="https://www.instagram.com/egv_squad5/">@egv_squad5</a>
+                <a href="https://www.instagram.com/egvsquad" target="_blank">EGV Squad Instagram</a>
             </div>
         </div>
         <div class="section" id="contact">
             <h2>Contact</h2>
-            <p>Connect with us on Discord:</p>
             <div class="contact-info">
-                <p>yuvraj7278</p>
-                <p>amantonpe</p>
-                <p>devilslayer20052009</p>
+                <p>Email: pjo251141@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 EGV Squad. All rights reserved.</p>
-        <p>Website by <a href="#">EGV SQUAD</a></p>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/@percyjackson-oy2gf?si=O2L0OA2le1zx6iOJ" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/egv_squad5/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
-        </div>
+        <p>Designed by <a href="https://www.example.com" target="_blank">Yuvraj Hendre</a></p>
     </footer>
 </body>
 </html>
