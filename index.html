@@ -4,41 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGV Squad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0f1923; /* Dark background color */
-            color: #ffffff; /* White text */
+            background-color: #0f1923;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1c1f26;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff4655;
+        }
+        header h1 {
+            color: #ff4655;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1c1f26;
+            padding: 10px;
+            border-bottom: 2px solid #ff4655;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff4655;
+            color: #000000;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #1c1f26; /* Slightly lighter background for container */
+            background-color: #1c1f26;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-            border: 2px solid #ff4655; /* Valorant Red border */
-        }
-        h1 {
-            text-align: center;
-            color: #ff4655; /* Valorant Red */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 30px;
+            border: 2px solid #ff4655;
         }
         .section {
             margin-bottom: 40px;
         }
         .section h2 {
-            color: #ffd700; /* Gold */
-            border-bottom: 2px solid #ff4655; /* Valorant Red border */
+            color: #ffd700;
+            border-bottom: 2px solid #ff4655;
             padding-bottom: 10px;
             margin-bottom: 20px;
             text-align: center;
         }
         .section p {
-            color: #dcdcdc; /* Light grey text for better contrast */
+            color: #dcdcdc;
             margin: 10px 0;
             text-align: center;
         }
@@ -49,56 +73,112 @@
         }
         .links a {
             text-decoration: none;
-            color: #ffffff; /* White text */
+            color: #ffffff;
             padding: 10px 20px;
-            background-color: #ff4655; /* Valorant Red */
+            background-color: #ff4655;
             border-radius: 5px;
-            border: 2px solid #ff4655; /* Red border */
+            border: 2px solid #ff4655;
             transition: all 0.3s ease;
             margin: 0 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         .links a:hover {
-            background-color: #ffa500; /* Orange on hover */
-            border: 2px solid #ffa500; /* Orange border on hover */
-            color: #000000; /* Black text on hover */
+            background-color: #ffa500;
+            border: 2px solid #ffa500;
+            color: #000000;
+        }
+        footer {
+            background-color: #1c1f26;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #ff4655;
+        }
+        footer p {
+            color: #dcdcdc;
+            margin: 5px 0;
+        }
+        footer a {
+            color: #ff4655;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .contact-info p {
+            margin: 5px 15px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #ff4655;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffa500;
         }
     </style>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Welcome to EGV Squad</h1>
-        
-        <div class="section">
+    </header>
+    <nav>
+        <a href="#team">Team Lineup</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="team">
             <h2>Team Lineup</h2>
             <p>EGV-YUVI</p>
             <p>EGV-AMAN</p>
             <p>EGV-Craniax8096</p>
         </div>
-        
-        <div class="section">
+        <div class="section" id="youtube">
             <h2>YouTube</h2>
             <p>Check out our YouTube channel:</p>
             <div class="links">
                 <a href="https://www.youtube.com/@percyjackson-oy2gf?si=O2L0OA2le1zx6iOJ">EGV Squad YouTube</a>
             </div>
         </div>
-        
-        <div class="section">
+        <div class="section" id="instagram">
             <h2>Instagram</h2>
             <p>Follow us on Instagram:</p>
             <div class="links">
                 <a href="https://www.instagram.com/egv_squad5/">@egv_squad5</a>
             </div>
         </div>
-        
-        <div class="section">
+        <div class="section" id="contact">
             <h2>Contact</h2>
             <p>Connect with us on Discord:</p>
-            <p>yuvraj7278</p>
-            <p>amantonpe</p>
-            <p>devilslayer20052009</p>
+            <div class="contact-info">
+                <p>yuvraj7278</p>
+                <p>amantonpe</p>
+                <p>devilslayer20052009</p>
+            </div>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2024 EGV Squad. All rights reserved.</p>
+        <p>Website by <a href="#">EGV SQUAD</a></p>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@percyjackson-oy2gf?si=O2L0OA2le1zx6iOJ" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/egv_squad5/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
